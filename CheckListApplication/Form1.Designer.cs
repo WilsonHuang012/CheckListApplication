@@ -32,10 +32,10 @@ namespace CheckListApplication
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.ItemTextBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
-            this.ItemTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -90,6 +90,14 @@ namespace CheckListApplication
             this.splitContainer2.SplitterDistance = 400;
             this.splitContainer2.TabIndex = 0;
             // 
+            // ItemTextBox
+            // 
+            this.ItemTextBox.Font = new System.Drawing.Font("PMingLiU", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ItemTextBox.Location = new System.Drawing.Point(290, 39);
+            this.ItemTextBox.Name = "ItemTextBox";
+            this.ItemTextBox.Size = new System.Drawing.Size(374, 59);
+            this.ItemTextBox.TabIndex = 3;
+            // 
             // SaveButton
             // 
             this.SaveButton.Location = new System.Drawing.Point(22, 243);
@@ -120,14 +128,6 @@ namespace CheckListApplication
             this.AddButton.UseVisualStyleBackColor = true;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // ItemTextBox
-            // 
-            this.ItemTextBox.Font = new System.Drawing.Font("PMingLiU", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.ItemTextBox.Location = new System.Drawing.Point(290, 39);
-            this.ItemTextBox.Name = "ItemTextBox";
-            this.ItemTextBox.Size = new System.Drawing.Size(374, 59);
-            this.ItemTextBox.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
@@ -135,7 +135,7 @@ namespace CheckListApplication
             this.ClientSize = new System.Drawing.Size(1066, 972);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CheckListApplication";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
